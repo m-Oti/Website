@@ -1,5 +1,6 @@
 header {
   background-color: #f2f2f2;
+  margin: 0;
 }
 
 .topnav a {
@@ -17,23 +18,33 @@ header {
   color: black;
 }
 
-ul {
+.topnav ul {
   list-style: none;
   padding-left: 0;
   display: flex;
-  margin-left: 20px;
+  margin: 0;
 }
 
-li {
+.topnav li {
   margin-right: 10px;
 }
 
-#shopping-cart {
+#login {
   margin-left: auto;
 }
 
 #logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#logo a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#logo a:hover {
+  background-color: #f2f2f2;
 }
