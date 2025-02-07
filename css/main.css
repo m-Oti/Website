@@ -1,0 +1,39 @@
+header {
+  background-color: #f2f2f2;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-left: 20px;
+}
+
+li {
+  margin-right: 10px;
+}
+
+#shopping-cart {
+  margin-left: auto;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
