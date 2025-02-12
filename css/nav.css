@@ -1,0 +1,62 @@
+header {
+    background-color: rgba(2, 4, 78, 0.9);
+    margin: 0;
+}
+
+nav {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+.topnav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+}
+
+.topnav li {
+  margin-right: 10px;
+}
+
+#login {
+  margin-left: auto;
+}
+
+#logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo a:hover {
+  text-decoration: none;
+}

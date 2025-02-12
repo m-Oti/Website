@@ -1,0 +1,52 @@
+.breadcrumb{
+    font-size: 0.9rem;
+    color: #555;
+    margin: 1rem 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+
+.category-header{
+    padding: 2vh 5%;
+    border-bottom: 2px solid #ddd;
+    background: #f9f9f9;
+}
+
+.category-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #363636;
+    margin-bottom: 0.5rem;
+}
+
+.subcategories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/*Maybe for the one that is selected keep it the darker colour*/
+.subcategories a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}
+
+.filter-sort{
+    background-color: rgba(2, 4, 78, 0.9);
+    color: white;
+}

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products</title>
     <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/nav.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,5 +14,44 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <nav class="topnav">
+        <ul>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Tech</a></li>
+          <li id="logo">
+            <a href="index.html"><img src="" alt="Logo" /></a>
+          </li>
+          <li id="login"><a href="">Login</a></li>
+          <li id="shopping-cart"><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="category-header">
+      <nav class="breadcrumb">
+        <a href="#">BACK</a>
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <span>Clothing</span>
+      </nav>
+
+      <h1 class="category-title">MEN CLOTHING</h1>
+
+      <nav class="subcategories">
+        <a href="#">Tops</a>
+        <a href="#">Bottoms</a>
+        <a href="#">Footwear</a>
+        <a href="#">Underwear</a>
+      </nav>
+
+      <button class="filter-sort">
+        FILTER AND SORT
+        <span class="filter-icon">☰</span>
+      </button>
+
+    </section>
+  </body>
 </html>
