@@ -50,3 +50,50 @@
     background-color: rgba(2, 4, 78, 0.9);
     color: white;
 }
+
+/*grid section for items*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    background: #f9f9f9;
+}
+
+.product-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-card img{
+    width: 100%;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.product-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+.product-name{
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.product-tag{
+    font-size: 0.8rem;
+    color: #e60023;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
