@@ -1,10 +1,7 @@
-.breadcrumb{
+/*.breadcrumb{
     font-size: 0.9rem;
     color: #555;
-    margin: 1rem 5%;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .breadcrumb a{
@@ -17,41 +14,113 @@
 }
 
 .category-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 2vh 5%;
     border-bottom: 2px solid #ddd;
     background: #f9f9f9;
+    flex-wrap: wrap;
 }
 
 .category-title{
     font-size: 2rem;
     font-weight: bold;
     color: #363636;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    /*margin-bottom: 0.5rem;
 }
 
 .subcategories{
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 0;
 }
 
-/*Maybe for the one that is selected keep it the darker colour*/
+Maybe for the one that is selected keep it the darker colour
 .subcategories a{
     text-decoration: none;
     color: #333;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-
 }
 
 .filter-sort{
     background-color: rgba(2, 4, 78, 0.9);
     color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 /*grid section for items*/
+
+.category-header{
+    padding: 2vh 5vw;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #555;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+
+.category-title{
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: bold;
+    text-align: left;
+    margin: 1.5vh 0;
+}
+
+.category-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.8vh;
+    flex-wrap: wrap;
+}
+
+.subcategories{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.subcategories a:hover{
+    text-decoration: underline;
+}
+
+.filter-sort{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.filter-icon{
+    margin-left: 0.5rem;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 items per row */
