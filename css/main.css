@@ -12,3 +12,66 @@ p {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+.main-img-tagline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: left;
+  margin-top: 20px;
+}
+
+#home-earbuds {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.main-img-tagline h1,
+.main-img-tagline p,
+.main-img-tagline nav {
+  position: absolute;
+  width: 100%;
+}
+
+.three-bestsellers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+}
+
+.three-bestsellers section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.three-bestsellers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-bestsellers h2,
+.three-bestsellers p {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.three-bestsellers h2 {
+  top: 5%;
+}
