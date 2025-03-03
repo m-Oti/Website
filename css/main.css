@@ -13,52 +13,95 @@ p {
   font-variation-settings: "wdth" 100;
 }
 
-header {
-  background-color: #f2f2f2;
-  margin: 0;
+.main-img-tagline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 20px;
 }
 
-.topnav a {
-  float: left;
+#home-earbuds {
+  width: 100%;
+  height: auto;
   display: block;
-  color: black;
-  text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
-  font-size: 17px;
+  object-fit: cover;
 }
 
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-.topnav ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
+.main-img-tagline h1 {
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 20px;
   margin: 0;
+  color: white;
 }
 
-.topnav li {
-  margin-right: 10px;
+.main-img-tagline p {
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 20px;
+  margin: 0;
+  color: white;
 }
 
-#login {
-  margin-left: auto;
+.main-img-tagline nav {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 30px;
 }
 
-#logo {
-  flex-grow: 1;
+.main-img-tagline nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  gap: 20px;
 }
 
-#logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo a:hover {
+.main-img-tagline nav a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: rgba(2, 4, 78, 0.9);
+  padding: 5px 10px;
+}
+
+.three-bestsellers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+}
+
+.three-bestsellers section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.three-bestsellers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-bestsellers h2,
+.three-bestsellers p {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.three-bestsellers h2 {
+  top: 5%;
 }
