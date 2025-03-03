@@ -17,8 +17,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: flex-start;
   text-align: left;
   margin-top: 20px;
 }
@@ -30,11 +29,42 @@ p {
   object-fit: cover;
 }
 
-.main-img-tagline h1,
-.main-img-tagline p,
+.main-img-tagline h1 {
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0;
+  color: white;
+}
+
+.main-img-tagline p {
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 20px;
+  margin: 0;
+  color: white;
+}
+
 .main-img-tagline nav {
   position: absolute;
-  width: 100%;
+  padding-left: 20px;
+  bottom: 30px;
+}
+
+.main-img-tagline nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-img-tagline nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: rgba(2, 4, 78, 0.9);
+  padding: 5px 10px;
 }
 
 .three-bestsellers {
