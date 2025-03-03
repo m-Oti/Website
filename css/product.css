@@ -58,7 +58,7 @@ Maybe for the one that is selected keep it the darker colour
 
 .category-header{
     padding: 2vh 5vw;
-    background: #fff;
+    background: #f1f1f1;
     border-bottom: 1px solid #ddd;
 }
 
@@ -72,7 +72,7 @@ Maybe for the one that is selected keep it the darker colour
 
 .breadcrumb a{
     text-decoration: none;
-    color: black;
+    color: #0f0f0f;
     font-weight: bold;
 }
 
@@ -93,13 +93,14 @@ Maybe for the one that is selected keep it the darker colour
     justify-content: space-between;
     border-bottom: 2px solid black;
     padding-bottom: 0.8vh;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .subcategories{
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .subcategories a:hover{
@@ -114,6 +115,7 @@ Maybe for the one that is selected keep it the darker colour
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
@@ -134,7 +136,7 @@ Maybe for the one that is selected keep it the darker colour
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     transition: transform 0.3s ease;
 }
 
@@ -144,6 +146,8 @@ Maybe for the one that is selected keep it the darker colour
 
 .product-card img{
     width: 100%;
+    height: 300px;
+    object-fit: contain;
     border-radius: 5px;
     background: #f1f1f1;
 }
@@ -156,7 +160,7 @@ Maybe for the one that is selected keep it the darker colour
 
 .product-name{
     font-size: 1rem;
-    color: #333;
+    color: #0f0f0f;
     margin: 0.5rem 0;
 }
 
