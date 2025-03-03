@@ -57,6 +57,16 @@ a, span, div, p{
     text-decoration: underline;
 }
 
+.filter-group{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-container{
+    display: flex;
+    align-items: center;
+}
+
 .filter-sort{
     border: 1px solid black;
     background: transparent;
@@ -78,7 +88,7 @@ a, span, div, p{
     grid-template-columns: repeat(4, 1fr); /* 4 items per row */
     gap: 1.5rem;
     padding: 2rem 5%;
-    background: #f9f9f9;
+    background: #f1f1f1;
 }
 
 .product-card {
