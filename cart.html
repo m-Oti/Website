@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/cart.css" />
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,5 +14,50 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="topnav">
+        <ul>
+          <li><a href="productmen.html">Men</a></li>
+          <li><a href="productwomen.html">Women</a></li>
+          <li><a href="producttech.html">Tech</a></li>
+          <li id="logo">
+            <a href="index.html"><img src="" alt="Logo" /></a>
+          </li>
+          <li id="login"><a href="">Login</a></li>
+          <li id="shopping-cart"><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+          <li class="empty-cart">Your shopping cart is empty.</li>
+        </ul>
+      </section>
+
+      <aside class="summary">
+        <h2>Delivery</h2>
+
+        <!--With label you can also click on the text and not only the radio button-->
+        <!--Also it is good for a screen reader-->
+        <label><input type="radio" name="delivery" checked /> Free</label>
+        <label><input type="radio" name="delivery" /> Express: 6.99€</label>
+        <p>Delivery date: March XX, 2025</p>
+
+        <input type="text" placeholder="Promocode" />
+        <button>Apply</button>
+        <p>No discount code applied</p>
+
+        <p>Subtotal: 0.00€</p>
+        <p>Discount: 0.00€</p>
+        <p>Delivery: 0.00€</p>
+        <h3>Total: 0.00€</h3>
+
+        <button class="checkout">Proceed to checkout</button>
+        <button class="continue">Continue shopping</button>
+      </aside>
+    </main>
+  </body>
 </html>
