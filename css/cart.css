@@ -98,6 +98,8 @@ main {
 .cart-item-image {
   width: 6rem;
   height: auto;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .cart-item-title {
