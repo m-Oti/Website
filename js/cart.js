@@ -8,8 +8,7 @@ increaseButtons.forEach((button) => {
     const inputField = this.parentElement.querySelector(".quantity-input");
 
     // get value and increase it
-    let currentValue = parseInt(inputField.value, 10);
-    inputField.value = currentValue + 1;
+    inputField.value = parseInt(inputField.value, 10) + 1;
     updateSubtotal();
   });
 });
@@ -18,7 +17,7 @@ decreaseButtons.forEach((button) => {
   button.addEventListener("click", function () {
     const inputField = this.parentElement.querySelector(".quantity-input");
 
-    let currentValue = parseInt(inputField.value, 10);
+    const currentValue = parseInt(inputField.value, 10);
     if (currentValue > 1) {
       inputField.value = currentValue - 1;
       updateSubtotal();
@@ -32,12 +31,11 @@ function updateSubtotal() {
   let subtotal = 0;
 
   document.querySelectorAll(".cart-item").forEach((item) => {
-    let priceText = item.querySelector(".cart-item-price").textContent;
+    const priceText = item.querySelector(".cart-item-price").textContent;
 
-    // get rid of the "€ " and convert it to a float. The following line was written with the help of ChatGPT
-    let price = parseFloat(priceText.replace("€", "").trim());
-
-    let quantity = parseInt(item.querySelector(".quantity-input").value, 10);
+    // get rid of the "€ " and convert it to a float.
+    const price = parseFloat(priceText.replace("€", ""));
+    const quantity = parseInt(item.querySelector(".quantity-input").value, 10);
 
     subtotal += price * quantity;
   });
@@ -51,20 +49,34 @@ updateSubtotal();
 // End of Javascript for the calculation of the Subtotal value
 
 // Start of Javascript for the Delivery Option
-const deliveryOptions = document.querySelectorAll("input[name='delivery']");
+function updateDeliveryInfo() {
+  const deliveryPriceField = document.querySelector("#delivery-price");
+  const deliveryDateField = document.querySelector("#delivery-date");
+  const dateOptions = { year: "numeric", month: "long", day: "numeric" };
+
+  if (this.value === "express") {
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + 1);
+    deliveryPriceField.textContent = "Delivery: € 6.99";
+    deliveryDateField.textContent = `Delivery date: ${deliveryDate.toLocaleDateString(
+      "en-US",
+      dateOptions
+    )}`;
+  } else {
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + 3);
+    deliveryPriceField.textContent = "Delivery: € 0.00";
+    deliveryDateField.textContent = `Delivery date: ${deliveryDate.toLocaleDateString(
+      "en-US",
+      dateOptions
+    )}`;
+  }
+}
+
+const deliveryOptions = document.querySelectorAll(".delivery-option");
+updateDeliveryInfo();
 
 deliveryOptions.forEach((option) => {
-  option.addEventListener("change", function () {
-    const deliveryPriceField = document.querySelector("#delivery-price");
-    const deliveryDateField = document.querySelector("#delivery-date");
-
-    if (this.value === "express") {
-      deliveryPriceField.textContent = "Delivery: € 6.99";
-      deliveryDateField.textContent = "Delivery date: March 17, 2025";
-    } else {
-      deliveryPriceField.textContent = "Delivery: € 0.00";
-      deliveryDateField.textContent = "Delivery date: March 20, 2025";
-    }
-  });
+  option.addEventListener("change", updateDeliveryInfo);
 });
 // End of Javascript for the Delivery Option
