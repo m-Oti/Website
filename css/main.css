@@ -61,6 +61,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+
   gap: 1rem;
 }
 
@@ -69,7 +70,14 @@ body {
   color: white;
   font-weight: bold;
   background: rgba(2, 4, 78, 0.9);
+  border-radius: 8px;
   padding: 0.5rem 1rem;
+}
+
+.main-img-tagline nav a:hover {
+  background-color: white;
+  color: rgba(2, 4, 78, 0.9);
+  transition: 0.7s;
 }
 
 .three-bestsellers {
