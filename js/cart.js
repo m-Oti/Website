@@ -10,6 +10,7 @@ increaseButtons.forEach((button) => {
     // get value and increase it
     let currentValue = parseInt(inputField.value, 10);
     inputField.value = currentValue + 1;
+    updateSubtotal();
   });
 });
 
@@ -20,7 +21,31 @@ decreaseButtons.forEach((button) => {
     let currentValue = parseInt(inputField.value, 10);
     if (currentValue > 1) {
       inputField.value = currentValue - 1;
+      updateSubtotal();
     }
   });
 });
 // End of Javascript for the Increase and decrease buttons
+
+// Start of Javascript for the calculation of the Subtotal value
+function updateSubtotal() {
+  let subtotal = 0;
+
+  document.querySelectorAll(".cart-item").forEach((item) => {
+    let priceText = item.querySelector(".cart-item-price").textContent;
+
+    // get rid of the "€ " and convert it to a float. The following line was written with the help of ChatGPT
+    let price = parseFloat(priceText.replace("€", "").trim());
+
+    let quantity = parseInt(item.querySelector(".quantity-input").value, 10);
+
+    subtotal += price * quantity;
+  });
+
+  document.querySelector(
+    "#subtotal-price"
+  ).textContent = `Subtotal: € ${subtotal.toFixed(2)}`;
+}
+
+updateSubtotal();
+// End of Javascript for the calculation of the Subtotal value
