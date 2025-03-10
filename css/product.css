@@ -99,6 +99,8 @@ a, span, div, p{
     text-align: left;
     transition: transform 0.25s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card:hover{
