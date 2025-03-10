@@ -49,3 +49,22 @@ function updateSubtotal() {
 
 updateSubtotal();
 // End of Javascript for the calculation of the Subtotal value
+
+// Start of Javascript for the Delivery Option
+const deliveryOptions = document.querySelectorAll("input[name='delivery']");
+
+deliveryOptions.forEach((option) => {
+  option.addEventListener("change", function () {
+    const deliveryPriceField = document.querySelector("#delivery-price");
+    const deliveryDateField = document.querySelector("#delivery-date");
+
+    if (this.value === "express") {
+      deliveryPriceField.textContent = "Delivery: € 6.99";
+      deliveryDateField.textContent = "Delivery date: March 17, 2025";
+    } else {
+      deliveryPriceField.textContent = "Delivery: € 0.00";
+      deliveryDateField.textContent = "Delivery date: March 20, 2025";
+    }
+  });
+});
+// End of Javascript for the Delivery Option

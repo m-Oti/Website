@@ -76,9 +76,19 @@
 
         <!--With label you can also click on the text and not only the radio button-->
         <!--Also it is good for a screen reader-->
-        <label><input type="radio" name="delivery" checked /> Free</label>
-        <label><input type="radio" name="delivery" /> Express: € 6.99</label>
-        <p>Delivery date: March XX, 2025</p>
+        <label
+          ><input
+            type="radio"
+            name="delivery"
+            checked
+            value="free"
+          />Free</label
+        >
+        <label
+          ><input type="radio" name="delivery" value="express" /> Express: €
+          6.99</label
+        >
+        <p id="delivery-date">Delivery date: March 20, 2025</p>
 
         <input type="text" placeholder="Promocode" />
         <button>Apply</button>
