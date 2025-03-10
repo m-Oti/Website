@@ -66,6 +66,7 @@ main {
   margin-top: 0.5rem;
   border: 1px solid #363636;
   border-radius: 8px;
+  text-indent: 8px;
 }
 
 .summary button {
