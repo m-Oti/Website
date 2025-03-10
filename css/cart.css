@@ -73,6 +73,71 @@ main {
   color: white;
 }
 
+.summary button:hover {
+  text-decoration: underline;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item-image {
+  width: 6rem;
+  height: auto;
+}
+
+.cart-item-title {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.cart-item-price {
+  font-size: 1rem;
+  color: #0f0f0f;
+}
+
+.quantity-decrease,
+.quantity-increase {
+  background: rgba(2, 4, 78, 0.9);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.quantity-decrease:hover,
+.quantity-increase:hover {
+  /* What color scheme? */
+}
+
+.quantity-input {
+  width: 1.5rem;
+  text-align: center;
+  border: 0.07rem solid #363636;
+  padding: 0.4rem;
+}
+
+.cart-item-remove {
+  background: rgba(2, 4, 78, 0.9); /*maybe a red*/
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-item-remove:hover {
+  /* What color scheme? */
+}
+
+@media only screen and (max-width: 610px) {
+  /* Responsiveness?*/
+}
+
 @media only screen and (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
