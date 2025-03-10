@@ -103,7 +103,7 @@ main {
 
 .quantity-decrease,
 .quantity-increase {
-  background: rgba(2, 4, 78, 0.9);
+  background: rgba(2, 4, 78, 0.5);
   color: white;
   border: none;
   padding: 0.5rem;
@@ -112,7 +112,8 @@ main {
 
 .quantity-decrease:hover,
 .quantity-increase:hover {
-  /* What color scheme? */
+  background: rgba(2, 4, 78, 0.9);
+  transition: 0.2s;
 }
 
 .quantity-input {
@@ -128,14 +129,11 @@ main {
   padding: 0.5rem 1rem;
   color: white;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .cart-item-remove:hover {
-  /* What color scheme? */
-}
-
-@media only screen and (max-width: 610px) {
-  /* Responsiveness?*/
+  background-color: rgb(202, 0, 0);
 }
 
 @media only screen and (max-width: 900px) {
@@ -144,4 +142,8 @@ main {
     height: auto;
     padding: 1rem;
   }
+}
+
+@media only screen and (max-width: 610px) {
+  /* Responsiveness? for the cart?*/
 }
