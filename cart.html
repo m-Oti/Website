@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/cart.css" />
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <script src="js/cart.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,5 +15,101 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="topnav">
+        <ul>
+          <li><a href="productmen.html">Men</a></li>
+          <li><a href="productwomen.html">Women</a></li>
+          <li><a href="producttech.html">Tech</a></li>
+          <li id="logo">
+            <a href="index.html"><img src="" alt="Logo" /></a>
+          </li>
+          <li id="login"><a href="">Login</a></li>
+          <li id="shopping-cart"><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+          <li class="empty-cart">Your shopping cart is empty.</li>
+          <li class="cart-item">
+            <img
+              src="img/men/menhat.png"
+              alt="Flat cap for men"
+              class="cart-item-image"
+            />
+
+            <h3 class="cart-item-title">Barbour Barlow Flatcap</h3>
+            <p class="cart-item-price">€ 44.90</p>
+
+            <button class="quantity-decrease">−</button>
+            <input type="text" value="1" class="quantity-input" />
+            <button class="quantity-increase">+</button>
+
+            <button class="cart-item-remove">Delete</button>
+          </li>
+
+          <li class="cart-item">
+            <img
+              src="img/electr/ring.png"
+              alt="Smart Ring"
+              class="cart-item-image"
+            />
+
+            <h3 class="cart-item-title">RingConn Smart Ring</h3>
+            <p class="cart-item-price">€ 284.00</p>
+
+            <button class="quantity-decrease">−</button>
+            <input type="text" value="1" class="quantity-input" />
+            <button class="quantity-increase">+</button>
+
+            <button class="cart-item-remove">Delete</button>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="summary">
+        <h2>Delivery</h2>
+
+        <!--With label you can also click on the text and not only the radio button-->
+        <!--Also it is good for a screen reader-->
+        <label>
+          <input
+            type="radio"
+            class="delivery-option"
+            name="delivery-option"
+            checked
+            value="free"
+          />
+          Free
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="delivery-option"
+            name="delivery-option"
+            value="express"
+          />
+          Express: € 6.99
+        </label>
+
+        <p id="delivery-date">Delivery date: Not specified</p>
+
+        <input type="text" placeholder="Promocode" />
+        <button>Apply</button>
+        <p>No discount code applied</p>
+
+        <p id="subtotal-price">Subtotal: € 0.00</p>
+        <p id="discount-price">Discount: € 0.00</p>
+        <p id="delivery-price">Delivery: € 0.00</p>
+        <h3 id="total-price">Total: € 0.00</h3>
+
+        <button class="checkout">Proceed to checkout</button>
+        <button class="continue">Continue shopping</button>
+      </aside>
+    </main>
+  </body>
 </html>
