@@ -71,7 +71,7 @@ main {
 
 .summary button {
   width: 100%;
-  padding: 0.75rem;
+  padding: 10px;
   margin-top: 0.5rem;
   border: none;
   border-radius: 8px;
@@ -81,8 +81,29 @@ main {
   color: white;
 }
 
-.summary button:hover {
-  text-decoration: underline;
+#apply-discount {
+  background-color: rgba(2, 4, 78, 0.5);
+}
+
+#apply-discount:hover {
+  background-color: rgba(2, 4, 78, 0.9);
+  transition: 0.2s;
+}
+
+#checkout:hover {
+  color: rgba(2, 4, 78, 0.9);
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #0f0f0f;
+  padding: 9px;
+}
+
+#continue:hover {
+  color: rgba(2, 4, 78, 0.9);
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #0f0f0f;
+  padding: 9px;
 }
 
 .cart-item {
