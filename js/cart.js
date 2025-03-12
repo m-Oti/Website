@@ -10,6 +10,8 @@ increaseButtons.forEach((button) => {
     // get value and increase it
     inputField.value = parseInt(inputField.value, 10) + 1;
     updateSubtotal();
+    applyDiscount();
+    updateTotal();
   });
 });
 
@@ -21,6 +23,8 @@ decreaseButtons.forEach((button) => {
     if (currentValue > 1) {
       inputField.value = currentValue - 1;
       updateSubtotal();
+      applyDiscount();
+      updateTotal();
     }
   });
 });
@@ -62,6 +66,7 @@ function updateDeliveryInfo() {
       "en-US",
       dateOptions
     )}`;
+    updateTotal();
   } else {
     const deliveryDate = new Date();
     deliveryDate.setDate(deliveryDate.getDate() + 3);
@@ -70,6 +75,7 @@ function updateDeliveryInfo() {
       "en-US",
       dateOptions
     )}`;
+    updateTotal();
   }
 }
 
@@ -80,3 +86,62 @@ deliveryOptions.forEach((option) => {
   option.addEventListener("change", updateDeliveryInfo);
 });
 // End of Javascript for the Delivery Option
+
+// Start of Javascript for Discount codes
+function applyDiscount() {
+  console.log("applyDiscount function executed!"); // Test-Log
+  const promoInput = document.querySelector("#promo-code");
+  const discountText = document.querySelector("#discount-text");
+  const discountPriceField = document.querySelector("#discount-price");
+  const subtotalField = document.querySelector("#subtotal-price");
+
+  let discountPercentage = 0;
+
+  if (promoInput.value === "discount10") {
+    discountPercentage = 10;
+    discountText.textContent = "10% discount applied";
+  } else if (promoInput.value === "discount20") {
+    discountPercentage = 20;
+    discountText.textContent = "20% discount applied";
+  } else {
+    discountText.textContent = "No discount code applied";
+  }
+
+  const discountAmount =
+    (parseFloat(subtotalField.textContent.replace("Subtotal: €", "")) *
+      discountPercentage) /
+    100;
+  discountPriceField.textContent = `Discount: € -${discountAmount.toFixed(2)}`;
+  updateTotal();
+}
+
+document
+  .querySelector("#apply-discount")
+  .addEventListener("click", applyDiscount);
+// End of Javascript for Discount codes
+
+// Start of Javascript to calculate the total amuont
+function updateTotal() {
+  let total = 0;
+  const subtotalPriceText = document.querySelector("#subtotal-price");
+  const discountPriceText = document.querySelector("#discount-price");
+  const deliveryPriceText = document.querySelector("#delivery-price");
+
+  const subtotalPrice = parseFloat(
+    subtotalPriceText.textContent.replace("Subtotal: €", "")
+  );
+  const discountPrice = parseFloat(
+    discountPriceText.textContent.replace("Discount: €", "")
+  );
+  const deliveryPrice = parseFloat(
+    deliveryPriceText.textContent.replace("Delivery: €", "")
+  );
+
+  total = subtotalPrice + discountPrice + deliveryPrice;
+  document.querySelector(
+    "#total-price"
+  ).textContent = `Total: € ${total.toFixed(2)}`;
+}
+
+updateTotal();
+// Start of Javascript to calculate the total amuont
