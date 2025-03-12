@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.addEventListener("click", (e) => {
                 const productId = e.target.getAttribute("data-id");
                 localStorage.setItem("SELECTED_PRODUCT_KEY", productId);
-                window.location.href = "product-details.html";
+                window.location.href = "detailearph.html";
             });
         });
     }
