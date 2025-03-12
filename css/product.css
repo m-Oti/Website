@@ -133,3 +133,50 @@ a, span, div, p{
     font-weight: bold;
     margin-top: 0.3rem;
 }
+
+/*media queries*/
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+    
+    .product-card img {
+        height: 250px; /* Slightly smaller images on tablet */
+    }
+}
+
+/* Media query for small tablets */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        gap: 1rem;
+    }
+    
+    .product-card img {
+        height: 200px;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 576px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+        padding: 1rem 5%;
+    }
+    
+    .category-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-group {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+    
+    .subcategories {
+        gap: 1rem;
+    }
+}
