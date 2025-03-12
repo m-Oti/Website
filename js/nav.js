@@ -1,10 +1,11 @@
 var prevScrollpos = window.scrollY;
-window.onscroll = function() {
-var currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".topnav").style.top = "0";
-  } else {
-    document.querySelector(".topnav").style.top = "-50px";
+
+window.addEventListener("scroll", function () {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos < currentScrollPos) {
+    document.querySelector("header").classList.add("hidden");
+  } else if (prevScrollpos > currentScrollPos) {
+    document.querySelector("header").classList.remove("hidden");
   }
   prevScrollpos = currentScrollPos;
-}
+});
