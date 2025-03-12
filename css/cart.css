@@ -31,7 +31,6 @@ main {
   background: #f1f1f1;
   padding: 1.5rem;
   border-radius: 8px;
-  /* Box shadow?*/
 }
 
 #cart-items {
@@ -178,8 +177,4 @@ main {
     height: auto;
     padding: 1rem;
   }
-}
-
-@media only screen and (max-width: 610px) {
-  /* Responsiveness? for the cart section?*/
 }
