@@ -23,17 +23,17 @@
   </head>
   <body>
     <header>
-      <nav class="topnav">
-        <div>
-          <ul id="nav-links">
-            <li><a href="products.html">All Items</a></li>
-            <li><a href="productmen.html">Men</a></li>
-            <li><a href="productwomen.html">Women</a></li>
-            <li><a href="producttech.html">Tech</a></li>
-          </ul>
-          <a id="nav-links-mobile">
+      <div class="topnav">
+        <nav id="nav-links">
+          <a class="desktop" href="products.html">All Items</a>
+          <a class="desktop" href="productmen.html">Men</a>
+          <a class="desktop" href="productwomen.html">Women</a>
+          <a class="desktop" href="producttech.html">Tech</a>
+
+          <a class="mobile">
             <!-- material-symbols:menu-rounded -->
             <svg
+              id="hamburger-trigger"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -44,10 +44,26 @@
                 d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
               />
             </svg>
-          </a>
-        </div>
 
-        <a id="logo" href="index.html"><img src="" alt="Logo" /></a>
+            <!-- material-symbols:close-rounded -->
+            <svg
+              id="close-trigger"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"
+              />
+            </svg>
+          </a>
+        </nav>
+
+        <a id="logo" href="index.html">
+          <img src="img/dt-logo.png" alt="Logo" height="30px"
+        /></a>
 
         <!-- Potential Login button -->
         <!-- <li id="login"><a href="">Login</a></li> -->
@@ -68,6 +84,13 @@
             </svg>
           </a>
         </div>
+      </div>
+
+      <nav class="nav-links-expanded">
+        <a href="products.html">All Items</a>
+        <a href="productmen.html">Men</a>
+        <a href="productwomen.html">Women</a>
+        <a href="producttech.html">Tech</a>
       </nav>
     </header>
     <main>
