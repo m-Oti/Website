@@ -8,6 +8,26 @@ header {
   background-color: rgba(2, 4, 78, 0.9);
 }
 
+.topnav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+#nav-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+#nav-actions {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
 .topnav a {
   float: left;
   display: block;
@@ -22,35 +42,8 @@ header {
   text-decoration: underline;
 }
 
-.topnav ul {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
 .topnav li {
   margin-right: 10px;
-}
-
-#login {
-  margin-left: auto;
-}
-
-#logo {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-#logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo a:hover {
-  text-decoration: none;
 }
 
 .hidden {
