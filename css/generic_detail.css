@@ -2,7 +2,7 @@ body {
   background-color: #f1f1f1;
 }
 
-p {
+.product-description {
   font-size: 1.5rem;
   color: #0f0f0f;
 }
@@ -34,17 +34,17 @@ p {
   margin-left: 2rem;
 }
 
-.product-info h1 {
+.product-title {
   margin-top: 0;
 }
 
-.rating {
+.product-rating {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #f4b400;
 }
 
-.price {
+.product-price {
   font-size: 2rem;
   margin-top: 0;
   font-weight: bold;
