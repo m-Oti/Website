@@ -19,6 +19,11 @@ header {
   margin: 0;
 }
 
+#nav-links-mobile {
+  display: none;
+  margin-left: 1rem;
+}
+
 #logo:hover {
   text-decoration: none;
 }
@@ -48,4 +53,13 @@ header {
 
 .hidden {
   transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 900px) {
+  #nav-links-mobile {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+  }
 }
