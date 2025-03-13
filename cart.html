@@ -94,7 +94,7 @@
       </nav>
     </header>
     <main>
-      <section class="cart">
+      <section class="cart container">
         <h2>Cart</h2>
         <ul id="cart-items">
           <li class="empty-cart">Your shopping cart is empty.</li>
@@ -143,7 +143,7 @@
         </ul>
       </section>
 
-      <aside class="summary">
+      <aside class="summary container">
         <h2>Delivery</h2>
 
         <!--With label you can also click on the text and not only the radio button-->
@@ -171,7 +171,7 @@
         <p id="delivery-date">Delivery date: Not specified</p>
 
         <input type="text" id="promo-code" placeholder="Promocode" />
-        <button id="apply-discount">Apply</button>
+        <button class="secondary" id="apply-discount">Apply</button>
         <p id="discount-text">No discount code applied</p>
 
         <p id="subtotal-price">Subtotal: € 0.00</p>
@@ -179,9 +179,9 @@
         <p id="delivery-price">Delivery: € 0.00</p>
         <h3 id="total-price">Total: € 0.00</h3>
 
-        <button id="checkout">Proceed to checkout</button>
+        <button class="primary" id="checkout">Proceed to checkout</button>
         <a href="products.html"
-          ><button id="continue">Continue shopping</button></a
+          ><button class="primary" id="continue">Continue shopping</button></a
         >
       </aside>
     </main>
