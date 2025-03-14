@@ -23,3 +23,5 @@ decreaseButtons.forEach((button) => {
   });
 });
 // End of Javascript for the Increase and decrease buttons
+
+setTimeout(() => document.body.classList.remove("preload"), 500);

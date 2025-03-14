@@ -28,6 +28,10 @@ body {
   min-height: 100%;
 }
 
+body.preload * {
+  animation-duration: 0s !important;
+}
+
 button {
   width: 100%;
   padding: 10px;
