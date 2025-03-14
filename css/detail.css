@@ -83,7 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #f1f1f1;
 }
 
 .feature-section.reverse {
@@ -93,7 +93,7 @@ body {
 /* Text Styling */
 .feature-text {
   max-width: 500px;
-  background: rgba(165, 162, 162, 0.8);
+  background-color: #363636;
   padding: 5%;
   border-radius: 10px;
 }
@@ -106,14 +106,14 @@ body {
 }
 
 .feature-text.right {
-  text-align: right;
+  text-align: left;
   margin-left: auto;
   margin-right: 10%;
 }
 
 h3 {
-  font-size: 16px;
-  color: gray;
+  font-size: 20px;
+  color: #a3a3a3;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -132,9 +132,9 @@ h2 {
 }
 
 main p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #444;
+  color: #a3a3a3;
 }
 
 @media only screen and (max-width: 700px) {
