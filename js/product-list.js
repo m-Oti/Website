@@ -2,7 +2,7 @@ export const products = [
   {
     id: "1",
     name: "Barbour Barlow Flatcap",
-    description: "",
+    description: "The Barlow Flat Cap is a classic cap from Barbour.",
     price: 44.9,
     image: "img/men/menhat.png",
     category: "men",
@@ -10,7 +10,7 @@ export const products = [
   {
     id: "2",
     name: "7V Battery Heated Jacket",
-    description: "",
+    description: "Additional heat to keep your core warm and toasty during all kinds of cold weather conditions, such as winter sports, outdoor camping, and others.",
     price: 76.95,
     image: "img/men/menjacket.jpg",
     category: "men",
@@ -18,7 +18,7 @@ export const products = [
   {
     id: "3",
     name: "Satu Adventure Pants",
-    description: "",
+    description: "Satu - named after the Malaysian word for 'one,' these pants are designed to do it all. Whether you're backpacking or heading to the office, the Satu Adventure Pants offer versatility, style, and performance.",
     price: 89.99,
     image: "img/men/menpants.png",
     category: "men",
@@ -26,7 +26,7 @@ export const products = [
   {
     id: "4",
     name: "General Construction Work Gloves",
-    description: "",
+    description: "Featuring an open back for ventilation and an ergonomic design that reduces hand fatigue, these gloves provide a high level comfort and functionality in a variety of conditions.",
     price: 19.99,
     image: "img/men/mengloves.jpg",
     category: "men",
@@ -34,7 +34,7 @@ export const products = [
   {
     id: "5",
     name: "ELTEN Sicherheitsstiefel STEFANO XXSG",
-    description: "",
+    description: "With a cowhide leather upper, this safety boot is particularly robust and ideal for construction sites. The breathable textile lining ensures a comfortable foot climate.",
     price: 148.9,
     image: "img/men/menshoes.png",
     category: "men",
@@ -42,7 +42,7 @@ export const products = [
   {
     id: "6",
     name: "Uposao Fur Hat",
-    description: "",
+    description: "New fashion design, one size fit most, elastic, soft and fashionable, very comfortable stretch fabric.",
     price: 20.9,
     image: "img/women/womenhat.jpg",
     category: "women",
@@ -50,7 +50,7 @@ export const products = [
   {
     id: "7",
     name: "iheat Heated Jacket",
-    description: "",
+    description: "4 carbon fiber heating elements generate heat across core body areas (left & right chest, mid-back,neck).",
     price: 100.95,
     image: "img/women/womenjacket.jpg",
     category: "women",
@@ -58,7 +58,7 @@ export const products = [
   {
     id: "8",
     name: "CRZ YOGA Cross Waist Leggings",
-    description: "",
+    description: "Butterluxe collection uses high-end fabric, engineered for luxurious comfort and made for all ways you move.",
     price: 35.99,
     image: "img/women/womenleggs.jpg",
     category: "women",
@@ -66,7 +66,7 @@ export const products = [
   {
     id: "9",
     name: "Battery Powered Heated Socks",
-    description: "",
+    description: "Electric socks adopt the new generation of carbon fiber 3D heating technology can be heated quickly and fast heating in 10 seconds.",
     price: 50.65,
     image: "img/women/womensocks.jpg",
     category: "women",
@@ -74,7 +74,7 @@ export const products = [
   {
     id: "10",
     name: "Even&Odd Platform Boots",
-    description: "",
+    description: "The wide, rounded toe shape and grooved, air-cushioned sole keep you bouncing even on your longest days.",
     price: 48.9,
     image: "img/women/womenboots.png",
     category: "women",
@@ -82,7 +82,7 @@ export const products = [
   {
     id: "11",
     name: "Andersson Powerbank 10000mAh",
-    description: "",
+    description: "Andersson PRB 2.74 gives you power wherever and whenever you want in a stylish minimalist package with capacity that amazes.",
     price: 24.99,
     image: "img/electr/powerbank.jpg",
     category: "tech",
@@ -90,7 +90,7 @@ export const products = [
   {
     id: "12",
     name: "Lenovo Legion VR Glasses",
-    description: "",
+    description: "Play games and watch movies anytime, anywhere with Legion Glass—a personal, body-worn, plug-and-play display.",
     price: 349.99,
     image: "img/electr/glasses.png",
     category: "tech",
@@ -98,7 +98,7 @@ export const products = [
   {
     id: "13",
     name: "RingConn Smart Ring",
-    description: "",
+    description: "RingConn, focusing on user experience, has enhanced performance while making the ring thinner, lighter, narrower, and more comfortable.",
     price: 284.9,
     image: "img/electr/ring.png",
     category: "tech",
@@ -106,7 +106,7 @@ export const products = [
   {
     id: "14",
     name: "Anker USB-C to USB-C Cable",
-    description: "",
+    description: "Crafted from 100% post-consumer recycled materials, the braided exterior combines eco-friendliness with high performance.",
     price: 25.5,
     image: "img/electr/cable.jpg",
     category: "tech",
@@ -114,7 +114,7 @@ export const products = [
   {
     id: "15",
     name: "EarFun Air Pro 3 Earbuds",
-    description: "",
+    description: "With 11mm wool composite driver and JumboBass technology, an impressive and balanced sound experience with strong bass.",
     price: 49.99,
     image: "img/electr/earbuds.jpg",
     category: "tech",
