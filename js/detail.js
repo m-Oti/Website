@@ -14,6 +14,8 @@ titleElement.innerHTML = product.name;
 descriptionElement.innerHTML = product.description ?? "";
 priceElement.innerHTML = `€ ${product.price.toFixed(2)}`;
 
+document.title = `${product.name} - Product Details`
+
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("product");

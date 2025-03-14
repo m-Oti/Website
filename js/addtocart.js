@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const addToCartButton = document.getElementById("add-to-cart-btn");
   const itemInCart = document.querySelector(".cart-count");
 
+  let cartObject = JSON.parse(localStorage.getItem("cart"));
+  if(cartObject){
+    itemInCart.innerHTML = cartObject[0].quantity;
+  }else{
+    itemInCart.innerHTML ="0";
+  }
+  //itemInCart.innerHTML = cartObject[0].quantity;
 
   if (addToCartButton) {
     addToCartButton.addEventListener("click", function () {
@@ -24,11 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
-
       cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-
-      itemInCart.innerHTML = JSON.stringify(localStorage.getItem("cart.quantity"));
-     //window.location.href = "cart.html";
+      let cartObject = JSON.parse(localStorage.getItem("cart"));
+      itemInCart.innerHTML = cartObject[0].quantity;
+      //window.location.href = "cart.html";
     });
   }
 });
