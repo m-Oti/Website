@@ -1,4 +1,4 @@
-import { products } from "./product.js";
+import { products } from "./product-list.js";
 
 const imgElement = document.querySelector(".product-image");
 const titleElement = document.querySelector(".product-title");

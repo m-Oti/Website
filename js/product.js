@@ -1,107 +1,85 @@
-export const products = [
-  {
-    id: "1",
-    name: "Barbour Barlow Flatcap",
-    price: 44.9,
-    image: "img/men/menhat.png",
-    category: "men",
+import { products } from "./product-list.js";
+
+const titleMap = {
+  null: {
+    title: "All Items",
+    breadcrumb: "Products",
+    subcategories: `
+          <a href="?category=men">Men</a>
+          <a href="?category=women">Women</a>
+          <a href="?category=tech">Tech</a>`,
   },
-  {
-    id: "2",
-    name: "7V Battery Heated Jacket",
-    price: 76.95,
-    image: "img/men/menjacket.jpg",
-    category: "men",
+  men: {
+    title: "Men Clothing",
+    breadcrumb: "Men",
+    subcategories: `<a href="#">Tops</a>
+          <a href="#">Bottoms</a>
+          <a href="#">Footwear</a>
+          <a href="#">Accessories</a>`,
   },
-  {
-    id: "3",
-    name: "Satu Adventure Pants",
-    price: 89.99,
-    image: "img/men/menpants.png",
-    category: "men",
+  women: {
+    title: "Women Clothing",
+    breadcrumb: "Women",
+    subcategories: `<a href="#">Tops</a>
+          <a href="#">Bottoms</a>
+          <a href="#">Footwear</a>
+          <a href="#">Accessories</a>`,
   },
-  {
-    id: "4",
-    name: "General Construction Work Gloves",
-    price: 19.99,
-    image: "img/men/mengloves.jpg",
-    category: "men",
+  tech: {
+    title: "Technology",
+    breadcrumb: "Tech",
+    subcategories: `<a href="#">Wearable</a>
+          <a href="#">Tools</a>`,
   },
-  {
-    id: "5",
-    name: "ELTEN Sicherheitsstiefel STEFANO XXSG",
-    price: 148.9,
-    image: "img/men/menshoes.jpg",
-    category: "men",
-  },
-  {
-    id: "6",
-    name: "Uposao Fur Hat",
-    price: 20.9,
-    image: "img/women/womenhat.jpg",
-    category: "women",
-  },
-  {
-    id: "7",
-    name: "iheat Heated Jacket",
-    price: 100.95,
-    image: "img/women/womenjacket.jpg",
-    category: "women",
-  },
-  {
-    id: "8",
-    name: "CRZ YOGA Cross Waist Leggings",
-    price: 35.99,
-    image: "img/women/womenleggs.jpg",
-    category: "women",
-  },
-  {
-    id: "9",
-    name: "Battery Powered Heated Socks",
-    price: 50.65,
-    image: "img/women/womensocks.jpg",
-    category: "women",
-  },
-  {
-    id: "10",
-    name: "Even&Odd Platform Boots",
-    price: 48.9,
-    image: "img/women/womenboots.png",
-    category: "women",
-  },
-  {
-    id: "11",
-    name: "Andersson Powerbank 10000mAh",
-    price: 24.99,
-    image: "img/electr/powerbank.jpg",
-    category: "tech",
-  },
-  {
-    id: "12",
-    name: "Lenovo Legion VR Glasses",
-    price: 349.99,
-    image: "img/electr/glasses.png",
-    category: "tech",
-  },
-  {
-    id: "13",
-    name: "RingConn Smart Ring",
-    price: 284.9,
-    image: "img/electr/ring.png",
-    category: "tech",
-  },
-  {
-    id: "14",
-    name: "Anker USB-C to USB-C Cable",
-    price: 25.5,
-    image: "img/electr/cable.jpg",
-    category: "tech",
-  },
-  {
-    id: "15",
-    name: "EarFun Air Pro 3 Earbuds",
-    price: 49.99,
-    image: "img/electr/earbuds.jpg",
-    category: "tech",
-  },
-];
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const productGrid = document.getElementById("productGrid");
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category");
+  const filterdProducts = products.filter((prod) => {
+    if (!category) {
+      return true; // use all products
+    } else {
+      return prod.category == category;
+    }
+  });
+
+  if (category) {
+    const productsBreadcrumb = document.createElement("a");
+    productsBreadcrumb.innerHTML = `<a href="products.html">Products</a>`;
+    document.querySelector(".breadcrumb").appendChild(productsBreadcrumb);
+  }
+  const categoryBreadcrumb = document.createElement("span");
+  categoryBreadcrumb.innerHTML = titleMap[category].breadcrumb;
+  document.querySelector(".breadcrumb").appendChild(categoryBreadcrumb);
+
+  document.querySelector(".category-title").innerHTML =
+    titleMap[category].title;
+
+  document.querySelector(".subcategories").innerHTML =
+    titleMap[category].subcategories;
+
+  // Function to generate product cards
+  function displayProducts() {
+    productGrid.innerHTML = ""; // Clear existing content
+
+    filterdProducts.forEach((product) => {
+      const productCard = document.createElement("div");
+      productCard.classList.add("product-card");
+
+      // Add event listeners to "View Details" buttons
+      productCard.addEventListener("click", (e) => {
+        window.location.href = `detail.html?product=${product.id}`;
+      });
+
+      productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div class="product-price">€ ${product.price.toFixed(2)}</div>
+                <div class="product-name">${product.name}</div>
+        `;
+      productGrid.appendChild(productCard);
+    });
+  }
+  displayProducts();
+});
