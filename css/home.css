@@ -45,8 +45,16 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-
   gap: 1rem;
+}
+
+.main-img-tagline nav li {
+  margin-top: 1rem;
+}
+
+.nav-main-img {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-img-tagline nav a {
@@ -107,7 +115,7 @@ body {
   top: 5%;
 }
 .three-bestsellers p {
-  top: 15%;
+  top: 25%;
 }
 
 .bestsellers-home:hover {
@@ -121,5 +129,11 @@ body {
   }
   .three-bestsellers div {
     height: 60vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-img-tagline nav {
+    font-size: 0.7rem;
   }
 }
