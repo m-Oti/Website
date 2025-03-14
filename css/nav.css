@@ -41,7 +41,7 @@ header a:hover {
 
 #nav-links .desktop,
 #nav-links .mobile,
-#nav-actions {
+#nav-actions{
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -73,7 +73,30 @@ header a:hover {
 #nav-actions {
   margin-left: auto;
   margin-right: 1rem;
+  position: relative;
 }
+
+.cart-icon{
+  position: relative;
+}
+
+/*https://www.solodev.com/blog/web-design/how-to-show-the-total-number-of-items-in-customer-shopping-carts.stml*/
+.cart-count {
+  position: absolute;
+  top: -5px;
+  left: 15px;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width: 900px) {
   #nav-links .mobile {

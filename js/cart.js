@@ -6,6 +6,7 @@ const deliveryPriceField = document.getElementById("delivery-price");
 const deliveryDateField = document.getElementById("delivery-date");
 const promoInput = document.getElementById("promo-code");
 const discountText = document.getElementById("discount-text");
+const itemInCart = document.querySelector(".cart-count");
 
 let deliveryCost = 0;
 let discountAmount = 0;
@@ -75,6 +76,10 @@ cartItemsContainer.addEventListener("click", function (event) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
+  
+  cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+  itemInCart.innerHTML = cartCount;
   loadCart();
 });
 

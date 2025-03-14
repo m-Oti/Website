@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartButton = document.getElementById("add-to-cart-btn");
+  const itemInCart = document.querySelector(".cart-count");
+
 
   if (addToCartButton) {
     addToCartButton.addEventListener("click", function () {
@@ -22,7 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
-      window.location.href = "cart.html";
+
+      cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+      itemInCart.innerHTML = JSON.stringify(localStorage.getItem("cart.quantity"));
+     //window.location.href = "cart.html";
     });
   }
 });
