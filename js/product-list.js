@@ -36,7 +36,7 @@ export const products = [
     name: "ELTEN Sicherheitsstiefel STEFANO XXSG",
     description: "",
     price: 148.9,
-    image: "img/men/menshoes.jpg",
+    image: "img/men/menshoes.png",
     category: "men",
   },
   {
