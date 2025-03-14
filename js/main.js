@@ -9,9 +9,6 @@ increaseButtons.forEach((button) => {
 
     // get value and increase it
     inputField.value = parseInt(inputField.value, 10) + 1;
-    updateSubtotal();
-    applyDiscount();
-    updateTotal();
   });
 });
 
@@ -22,9 +19,6 @@ decreaseButtons.forEach((button) => {
     const currentValue = parseInt(inputField.value, 10);
     if (currentValue > 1) {
       inputField.value = currentValue - 1;
-      updateSubtotal();
-      applyDiscount();
-      updateTotal();
     }
   });
 });
