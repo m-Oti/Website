@@ -71,13 +71,13 @@ header:not(.menu-expanded) .nav-links-expanded {
     max-height: 0;
   }
   100% {
-    max-height: 30vh;
+    max-height: 223px;
   }
 }
 
 @keyframes header-shrink {
   0% {
-    max-height: 30vh;
+    max-height: 223px;
   }
   100% {
     max-height: 0;
