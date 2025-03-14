@@ -108,7 +108,7 @@ p,
 }
 
 @media only screen and (max-width: 900px) {
-  main {
+  .cart-view {
     grid-template-columns: 1fr;
     height: auto;
     padding: 1rem;
