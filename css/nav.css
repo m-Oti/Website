@@ -41,13 +41,12 @@ header a:hover {
 
 #nav-links .desktop,
 #nav-links .mobile,
-#nav-actions{
+#nav-actions {
   margin-top: auto;
   margin-bottom: auto;
 }
 
 #nav-links .mobile,
-.nav-links-expanded,
 .menu-expanded #hamburger-trigger,
 #close-trigger {
   display: none;
@@ -56,6 +55,33 @@ header a:hover {
 .menu-expanded #close-trigger,
 .menu-expanded .nav-links-expanded {
   display: block;
+}
+
+header:not(.menu-expanded) .nav-links-expanded {
+  animation: header-shrink 0.2s ease-in-out forwards;
+  overflow: hidden;
+}
+
+.menu-expanded .nav-links-expanded {
+  animation: header-grow 0.2s ease-in-out forwards;
+}
+
+@keyframes header-grow {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 30vh;
+  }
+}
+
+@keyframes header-shrink {
+  0% {
+    max-height: 30vh;
+  }
+  100% {
+    max-height: 0;
+  }
 }
 
 .nav-links-expanded a {
@@ -76,7 +102,7 @@ header a:hover {
   position: relative;
 }
 
-.cart-icon{
+.cart-icon {
   position: relative;
 }
 
@@ -96,7 +122,6 @@ header a:hover {
   justify-content: center;
   font-weight: bold;
 }
-
 
 @media only screen and (max-width: 900px) {
   #nav-links .mobile {
