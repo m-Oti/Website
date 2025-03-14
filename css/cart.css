@@ -17,10 +17,6 @@ p,
   font-variation-settings: "wdth" 100;
 }
 
-main {
-  flex: 1;
-}
-
 .cart-view {
   display: grid;
   grid-template-columns: 2fr 1fr;
