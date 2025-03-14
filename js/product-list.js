@@ -2,6 +2,7 @@ export const products = [
   {
     id: "1",
     name: "Barbour Barlow Flatcap",
+    description: "",
     price: 44.9,
     image: "img/men/menhat.png",
     category: "men",
@@ -9,6 +10,7 @@ export const products = [
   {
     id: "2",
     name: "7V Battery Heated Jacket",
+    description: "",
     price: 76.95,
     image: "img/men/menjacket.jpg",
     category: "men",
@@ -16,6 +18,7 @@ export const products = [
   {
     id: "3",
     name: "Satu Adventure Pants",
+    description: "",
     price: 89.99,
     image: "img/men/menpants.png",
     category: "men",
@@ -23,6 +26,7 @@ export const products = [
   {
     id: "4",
     name: "General Construction Work Gloves",
+    description: "",
     price: 19.99,
     image: "img/men/mengloves.jpg",
     category: "men",
@@ -30,6 +34,7 @@ export const products = [
   {
     id: "5",
     name: "ELTEN Sicherheitsstiefel STEFANO XXSG",
+    description: "",
     price: 148.9,
     image: "img/men/menshoes.jpg",
     category: "men",
@@ -37,6 +42,7 @@ export const products = [
   {
     id: "6",
     name: "Uposao Fur Hat",
+    description: "",
     price: 20.9,
     image: "img/women/womenhat.jpg",
     category: "women",
@@ -44,6 +50,7 @@ export const products = [
   {
     id: "7",
     name: "iheat Heated Jacket",
+    description: "",
     price: 100.95,
     image: "img/women/womenjacket.jpg",
     category: "women",
@@ -51,6 +58,7 @@ export const products = [
   {
     id: "8",
     name: "CRZ YOGA Cross Waist Leggings",
+    description: "",
     price: 35.99,
     image: "img/women/womenleggs.jpg",
     category: "women",
@@ -58,6 +66,7 @@ export const products = [
   {
     id: "9",
     name: "Battery Powered Heated Socks",
+    description: "",
     price: 50.65,
     image: "img/women/womensocks.jpg",
     category: "women",
@@ -65,6 +74,7 @@ export const products = [
   {
     id: "10",
     name: "Even&Odd Platform Boots",
+    description: "",
     price: 48.9,
     image: "img/women/womenboots.png",
     category: "women",
@@ -72,6 +82,7 @@ export const products = [
   {
     id: "11",
     name: "Andersson Powerbank 10000mAh",
+    description: "",
     price: 24.99,
     image: "img/electr/powerbank.jpg",
     category: "tech",
@@ -79,6 +90,7 @@ export const products = [
   {
     id: "12",
     name: "Lenovo Legion VR Glasses",
+    description: "",
     price: 349.99,
     image: "img/electr/glasses.png",
     category: "tech",
@@ -86,6 +98,7 @@ export const products = [
   {
     id: "13",
     name: "RingConn Smart Ring",
+    description: "",
     price: 284.9,
     image: "img/electr/ring.png",
     category: "tech",
@@ -93,6 +106,7 @@ export const products = [
   {
     id: "14",
     name: "Anker USB-C to USB-C Cable",
+    description: "",
     price: 25.5,
     image: "img/electr/cable.jpg",
     category: "tech",
@@ -100,6 +114,7 @@ export const products = [
   {
     id: "15",
     name: "EarFun Air Pro 3 Earbuds",
+    description: "",
     price: 49.99,
     image: "img/electr/earbuds.jpg",
     category: "tech",
