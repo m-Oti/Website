@@ -51,6 +51,25 @@ body {
   color: #0f0f0f;
 }
 
+.item-action {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-to-cart,
+.quantity-increase,
+.quantity-decrease {
+  display: flex;
+  align-items: center;
+}
+
+#add-to-cart-btn,
+.quantity-input,
+#quantity-increase,
+#quantity-decrease {
+  margin-top: 1rem;
+}
+
 .feature-section {
   position: relative;
   width: 100vw;
