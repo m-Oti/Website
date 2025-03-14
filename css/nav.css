@@ -35,6 +35,10 @@ header a:hover {
   margin-bottom: auto;
 }
 
+#nav-links a {
+  padding-right: 0;
+}
+
 #nav-links .desktop,
 #nav-links .mobile,
 #nav-actions {
@@ -56,8 +60,6 @@ header a:hover {
 
 .nav-links-expanded a {
   display: block;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-bottom: 1rem;
   padding-top: 1rem;
   padding-left: 2rem;
@@ -76,6 +78,10 @@ header a:hover {
 @media only screen and (max-width: 900px) {
   #nav-links .mobile {
     display: block;
+    padding-left: 0;
+  }
+  #shopping-cart {
+    padding-right: 0;
   }
   #nav-links .desktop {
     display: none;
