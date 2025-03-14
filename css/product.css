@@ -6,20 +6,23 @@
 
 .breadcrumb {
   font-size: clamp(0.8rem, 2vw, 1rem);
-  color: #555;
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  color: #0f0f0f;
 }
 
 .breadcrumb a {
   text-decoration: none;
-  color: #0f0f0f;
-  font-weight: bold;
+  color: #555;
 }
 
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+
+.breadcrumb span {
+  font-weight: bold;
 }
 
 .category-title {
@@ -27,6 +30,7 @@
   font-weight: bold;
   text-align: left;
   margin: 1.5vh 0;
+  text-transform: uppercase;
 }
 
 .category-menu {
@@ -43,6 +47,10 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   flex-grow: 1;
+}
+.subcategories a {
+  color: #0f0f0f;
+  text-decoration: none;
 }
 
 .subcategories a:hover {
