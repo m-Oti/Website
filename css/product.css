@@ -112,7 +112,7 @@
   height: 300px;
   object-fit: contain;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: white;
 }
 
 .product-price {
