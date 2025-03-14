@@ -18,6 +18,10 @@ p,
 }
 
 main {
+  flex: 1;
+}
+
+.cart-view {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
