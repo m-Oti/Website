@@ -3,22 +3,23 @@ body {
 }
 
 .main-img-tagline {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
   text-align: left;
 }
 
 #home-earbuds {
-  width: 100%;
+  width: 50%;
   height: auto;
-  display: block;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .main-img-tagline h1 {
-  position: absolute;
   padding-left: 1rem;
   margin: 0;
   color: white;
@@ -30,9 +31,8 @@ body {
 }
 
 .main-img-tagline p {
-  position: absolute;
   padding: 1rem;
-  max-width: 65%;
+  max-width: 50%;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
@@ -43,44 +43,6 @@ body {
   border-radius: 8px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   top: 20%;
-}
-
-.main-img-tagline nav {
-  position: absolute;
-  padding-left: 1rem;
-  bottom: 2rem;
-}
-
-.main-img-tagline nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.main-img-tagline nav li {
-  margin-top: 1rem;
-}
-
-.nav-main-img {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main-img-tagline nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  background: rgba(2, 4, 78, 0.9);
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-}
-
-.main-img-tagline nav a:hover {
-  background-color: white;
-  color: rgba(2, 4, 78, 0.9);
-  transition: 0.7s;
 }
 
 .three-bestsellers {
@@ -162,9 +124,6 @@ body {
 }
 
 @media only screen and (max-width: 530px) {
-  .main-img-tagline nav {
-    font-size: 0.7rem;
-  }
   .main-img-tagline p {
     transform: scaleY(0);
   }
