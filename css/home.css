@@ -85,7 +85,7 @@ body {
 
 .three-bestsellers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   padding-top: 1rem;
   padding-left: 0;
@@ -154,7 +154,7 @@ body {
 
   .three-bestsellers {
     grid-template-columns: 1fr;
-    grid-template-rows: 60vw 60vw 60vw;
+    grid-template-rows: 60vw 60vw;
   }
   .three-bestsellers div {
     height: 60vw;
