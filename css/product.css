@@ -85,7 +85,7 @@
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  grid-template-columns: repeat(3, 1fr); /* 4 items per row */
   gap: 1.5rem;
   padding: 2rem 5%;
   background: #f1f1f1;

@@ -6,30 +6,15 @@ const titleMap = {
     breadcrumb: "Products",
     subcategories: `
           <a href="?category=men">Men</a>
-          <a href="?category=women">Women</a>
-          <a href="?category=tech">Tech</a>`,
+          <a href="?category=women">Women</a>` ,
   },
   men: {
     title: "Men Clothing",
     breadcrumb: "Men",
-    subcategories: `<a href="#">Tops</a>
-          <a href="#">Bottoms</a>
-          <a href="#">Footwear</a>
-          <a href="#">Accessories</a>`,
   },
   women: {
     title: "Women Clothing",
     breadcrumb: "Women",
-    subcategories: `<a href="#">Tops</a>
-          <a href="#">Bottoms</a>
-          <a href="#">Footwear</a>
-          <a href="#">Accessories</a>`,
-  },
-  tech: {
-    title: "Technology",
-    breadcrumb: "Tech",
-    subcategories: `<a href="#">Wearable</a>
-          <a href="#">Tools</a>`,
   },
 };
 
