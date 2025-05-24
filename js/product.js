@@ -5,12 +5,12 @@ const titleMap = {
     title: "All Items",
     breadcrumb: "Products",
     subcategories: `
-          <a href="?category=men">Men</a>
+          <a href="?category=portraits">Portraits</a>
           <a href="?category=women">Women</a>` ,
   },
-  men: {
-    title: "Men Clothing",
-    breadcrumb: "Men",
+  portraits: {
+    title: "Portraits",
+    breadcrumb: "Portraits",
   },
   women: {
     title: "Women Clothing",
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (category) {
     const productsBreadcrumb = document.createElement("a");
-    productsBreadcrumb.innerHTML = `<a href="products.html">Products</a>`;
     document.querySelector(".breadcrumb").appendChild(productsBreadcrumb);
   }
   const categoryBreadcrumb = document.createElement("span");
