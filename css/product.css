@@ -180,3 +180,43 @@
     gap: 1rem;
   }
 }
+
+/*Form containers*/
+#customFormContainer {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#customFormContainer form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#customFormContainer input,
+#customFormContainer select,
+#customFormContainer textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+#customFormContainer button {
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -66,4 +66,66 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   displayProducts();
+
+  function renderCustomForm(category) {
+    const formContainer = document.getElementById("customFormContainer");
+  
+    if (!["portraits", "textiles"].includes(category)) {
+      formContainer.innerHTML = ""; // Clear form if no relevant category
+      return;
+    }
+  
+    const sizeOptions =
+      category === "portraits"
+        ? ["Small", "Medium", "Large"]
+        : ["Blazer", "Jacket", "Pocket"];
+  
+        formContainer.innerHTML = `
+        <h2>Custom Order Form</h2>
+        <form id="customOrderForm">
+          <label>First Name:
+            <input type="text" name="firstName" required>
+          </label><br>
+          
+          <label>Last Name:
+            <input type="text" name="lastName" required>
+          </label><br>
+          
+          <label>Email:
+            <input type="email" name="email" required>
+          </label><br>
+          
+          <label>Phone:
+            <input type="tel" name="phone" required>
+          </label><br>
+          
+          <label>${category === "portraits" ? "Size" : "Type"}:
+            <select name="option" required>
+              ${sizeOptions.map((opt) => `<option value="${opt}">${opt}</option>`).join("")}
+            </select>
+          </label><br>
+          
+          <label>Message:
+            <textarea name="message" rows="4" placeholder="Tell me what you have in mind..." required></textarea>
+          </label><br>
+          
+          <button type="submit">Submit Order</button>
+        </form>
+      `;
+      
+  
+    document
+      .getElementById("customOrderForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const orderData = Object.fromEntries(formData.entries());
+        console.log("Submitted Order:", orderData);
+        alert("Thank you for your submission!");
+        this.reset();
+      });
+  }
+  
+  renderCustomForm(category);
+  
 });
