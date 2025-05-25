@@ -1,5 +1,5 @@
 body {
-  background-color: #FFF8E7;
+  background-color: #f5c892;
 }
 
 .main-img-tagline {
@@ -22,7 +22,7 @@ body {
 .main-img-tagline h1 {
   padding-left: 1rem;
   margin: 0;
-  color: #6ECEDA;
+  color: #dd4b2a;
   font-size: 2.05rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

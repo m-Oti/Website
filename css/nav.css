@@ -5,7 +5,7 @@ header {
   width: 100%;
   z-index: 100;
   transition: transform 0.3s ease-out;
-  background-color: #D7A9E3 ;
+  background-color: #c56a32;
 }
 
 header a {
