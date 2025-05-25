@@ -41,8 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".category-title").innerHTML =
     titleMap[category].title;
 
-  document.querySelector(".subcategories").innerHTML =
-    titleMap[category].subcategories;
 
   // Function to generate product cards
   function displayProducts() {
@@ -54,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Add event listeners to "View Details" buttons
       productCard.addEventListener("click", (e) => {
-        window.location.href = `detail.html?product=${product.id}`;
+        //window.location.href = `detail.html?product=${product.id}`;
       });
 
       productCard.innerHTML = `
